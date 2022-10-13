@@ -1,13 +1,23 @@
 #11120428,侯嘉韋
-def add2n(n):    
-    n = input("Please input a integer number (1 ~ 9) :")    
-    print("The Result of 1/n * 2n = ",1/n*2*n)
+def add2n():
+    y = []
+    flag = 0
+    for j in range(0,9):
+        n = int(j+1)
+        x = 0
+        for i in range(0,2*n):
+            x += 1/n
+        print("The Result of ",n,":",x)
+        if int(x) != 2 :
+            flag += 1
+            y.append(n)
+            
+    print("The Following numbers do not give a value of 2 :",end = " ")
+    for k in range(0,flag):
+        print(y[k],end = " ")
+    print("\n")
+    exit()
     
 #main function:
-n = 0
-add2n(n)
-    
-# Test 
-'''
-
-'''
+while 1:
+    add2n()

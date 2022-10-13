@@ -22,3 +22,5 @@ sum(5, 10)
 print("x = -5 and y = 5:", end=" ")
 sum(-5, 5)
 '''
+language = "python3"
+run = "python main.py"
